@@ -3,5 +3,5 @@ RUN mkdir node
 COPY . ./node
 WORKDIR ./node/
 RUN npm install 
-EXPOSE 8081
+EXPOSE 3000
 CMD node server_init.js
