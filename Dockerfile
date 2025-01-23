@@ -1,7 +1,6 @@
 FROM node:12.16-alpine
-RUN mkdir node
-COPY . ./node
-WORKDIR ./node/
-RUN npm install 
+RUN mkdir myapp
+COPY . ./myapp
+WORKDIR ./myapp/
 EXPOSE 3000
 CMD [ "node", "app.js" ]
