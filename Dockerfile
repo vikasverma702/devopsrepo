@@ -4,4 +4,4 @@ COPY . ./node
 WORKDIR ./node/
 RUN npm install 
 EXPOSE 3000
-CMD node server_init.js
+CMD node app.js
